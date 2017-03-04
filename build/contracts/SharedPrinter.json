@@ -1,0 +1,174 @@
+{
+  "contract_name": "SharedPrinter",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "status",
+      "outputs": [
+        {
+          "name": "available",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "finishPrint",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "printer_status",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "startPrint",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "destroy",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "PrintStarted",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "PrintFinished",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b60008054600160a060020a03191633600160a060020a0316179055600180555b5b6101e28061003a6000396000f3006060604052361561005c5763ffffffff60e060020a600035041663200d2ed28114610061578063330fdbf4146100805780633d4f62b8146100925780636b900d3c146100b157806383197ef0146100c35780638da5cb5b146100d2575b610000565b346100005761006e6100fb565b60408051918252519081900360200190f35b3461000057610090600435610102565b005b346100005761006e61013d565b60408051918252519081900360200190f35b3461000057610090600435610143565b005b346100005761009061017f565b005b34610000576100df6101a7565b60408051600160a060020a039092168252519081900360200190f35b6001545b90565b600180556040805182815290517f425e42f646eaea5e3e3c529d4926d4ccdae2c0438ca7c155f5eee288f8b384ea9181900360200190a15b50565b60015481565b60006001556040805182815290517f2474114a39882452e8861b6e3c15443198a9c6dff237d6c472852ad44e0a0e7b9181900360200190a15b50565b60005433600160a060020a03908116911614156101a457600054600160a060020a0316ff5b5b565b600054600160a060020a0316815600a165627a7a7230582014f3c0d1113e50c761dffc7e5a1f38e17ff73f20b93be4084c4e17d08d654f6d0029",
+  "networks": {
+    "1488619456320": {
+      "events": {
+        "0x2474114a39882452e8861b6e3c15443198a9c6dff237d6c472852ad44e0a0e7b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "PrintStarted",
+          "type": "event"
+        },
+        "0x425e42f646eaea5e3e3c529d4926d4ccdae2c0438ca7c155f5eee288f8b384ea": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "PrintFinished",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf25b51a117d0fcdb7a58a713d85088bf4831c726",
+      "updated_at": 1488620103363
+    },
+    "1488621053129": {
+      "events": {
+        "0x2474114a39882452e8861b6e3c15443198a9c6dff237d6c472852ad44e0a0e7b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "PrintStarted",
+          "type": "event"
+        },
+        "0x425e42f646eaea5e3e3c529d4926d4ccdae2c0438ca7c155f5eee288f8b384ea": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "id",
+              "type": "uint256"
+            }
+          ],
+          "name": "PrintFinished",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x76540a0b23b10b9a07f05dd4f8b0aa1744e233f4",
+      "updated_at": 1488623536153
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1488624404801
+}
