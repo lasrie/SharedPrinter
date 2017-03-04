@@ -14,5 +14,27 @@ contract('SharedPrinter', function(accounts) {
 			});
 					
 		});
+		
+  it("Correct Event is triggered on StartPrint", function() {
+    var instance;
+    return SharedPrinter.deployed().then(function(inst) {
+		instance = inst;
+		return instance.startPrint(0);
+	}).then(function(result){
+		var event = "none";
+		for (var i = 0; i < result.logs.length; i++) {
+			var log = result.logs[i];
+
+			if (log.event == "PrintStarted") {
+				// We found the event!
+				event = log.event;
+				break;
+			}
+		}
+		assert.equal(event, "PrintStarted", "PrintStarted Event was not fired");
+	
+			});
+					
+		});
     });
  
