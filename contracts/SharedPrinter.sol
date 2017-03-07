@@ -15,7 +15,7 @@ contract SharedPrinter {
     owner = msg.sender;
   }
 
-  function startPrint(uint id) public{
+  function startPrint(uint id) payable{
 	printer_status = 0;
 	PrintStarted(id);
   }
